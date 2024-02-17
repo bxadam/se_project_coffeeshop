@@ -16,7 +16,6 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Noto+Serif:ital@0;1&display=swap"
       rel="stylesheet"
     />
-    <!-- Cannonical html tag? -->
   </head>
   <body>
     <div class="page">
@@ -98,7 +97,37 @@
             </div>
           </div>
         </section>
-        <section class="reservations" id="reservations-id"></section>
+        <section class="reservation" id="reservations-id">
+          <h2 class="reservation__title">Book a table</h2>
+          <form class="reservation__form form">
+            <fieldset class="form__fieldset">
+              <label class="form__label" for="name">
+                Name *<input class="form__input" type="text" id="name" />
+              </label>
+              <label class="form__label" for="number">
+                Number of guests *<input
+                  class="form__input"
+                  type="number"
+                  id="number"
+                />
+              </label>
+              <label class="form__label" for="">
+                Date and Time *<input
+                  class="form__input"
+                  type="datetime-local"
+                />
+              </label>
+              <label class="form__label" for="">
+                Email *<input class="form__input" type="email" />
+              </label>
+            </fieldset>
+            <button class="form__button" type="submit">Book a table</button>
+            <label for="" class="form__label form__label_type_checkbox">
+              <input class="form__checkbox" type="checkbox" />
+              I agree with the terms of use
+            </label>
+          </form>
+        </section>
         <section class="menu" id="menu-id"></section>
         <section class="about" id="about-id"></section>
       </main>
