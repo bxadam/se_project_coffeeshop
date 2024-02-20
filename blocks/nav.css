@@ -1,3 +1,12 @@
+@keyframes change_color_nav {
+  from {
+    color: black;
+  }
+  to {
+    color: #2f80ed;
+  }
+}
+
 .nav {
   display: flex;
   justify-content: space-between;
@@ -26,4 +35,8 @@
 .nav__link {
   text-decoration: none;
   color: black;
+}
+
+.nav__link:hover {
+  animation: change_color_nav 2.5s ease-in-out;
 }

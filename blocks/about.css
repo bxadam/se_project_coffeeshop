@@ -1,10 +1,55 @@
+@keyframes pulsate {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(1.25);
+  }
+}
+
+.about {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  background-color: #0a2850;
+}
+
 .about__title {
+  margin: 0;
+  max-width: 251px;
+  position: relative;
+  left: 80px;
+  top: 100px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
+  color: white;
+  z-index: 1;
 }
 
 .about__content {
+  margin: 119px 80px 173px;
+  max-width: 660px;
 }
 
 .about__paragraph {
+  margin: 0 0 20px;
+  font-family: "Noto Serif";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  color: white;
+}
+
+.about__paragraph:last-child {
+  margin-bottom: 0;
 }
 
 .about__circle {
@@ -15,5 +60,9 @@
   position: absolute;
   left: -129px;
   top: -152px;
-  z-index: -1;
+  overflow: hidden;
+}
+
+.about__circle_animation_blurred {
+  animation: pulsate 1.3s ease-in-out infinite alternate-reverse;
 }
