@@ -1,0 +1,19 @@
+.about__title {
+}
+
+.about__content {
+}
+
+.about__paragraph {
+}
+
+.about__circle {
+  height: 426px;
+  width: 426px;
+  background-color: #2f80ed;
+  border-radius: 50%;
+  position: absolute;
+  left: -129px;
+  top: -152px;
+  z-index: -1;
+}
