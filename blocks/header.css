@@ -43,6 +43,7 @@
   font-weight: normal;
   font-family: "Noto Serif", "Times New Roman", serif;
   font-style: normal;
+  z-index: 1;
 }
 
 .header__image {
@@ -51,7 +52,7 @@
   height: 568px;
   right: 5px;
   top: 124px;
-  z-index: 1;
+  z-index: 0;
 }
 
 .header__footer {
